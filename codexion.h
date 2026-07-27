@@ -6,15 +6,16 @@
 /*   By: rkadri <rkadri@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/26 03:41:38 by rkadri            #+#    #+#             */
-/*   Updated: 2026/07/26 03:47:38 by rkadri           ###   ########.fr       */
+/*   Updated: 2026/07/28 02:59:31 by rkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CODEXION_H
 # define CODEXION_H
 
-// DEV
+# include <limits.h>
 # include <stdio.h>
+# include <string.h>
 
 typedef struct s_config
 {
@@ -27,5 +28,7 @@ typedef struct s_config
 	int		dongle_cooldown;
 	char	*scheduler;
 }			t_config;
+
+char		*parse_config(char **argv, t_config *config);
 
 #endif // CODEXION_H

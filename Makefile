@@ -1,9 +1,9 @@
 NAME    = codexion
 CC      = cc
-CFLAGS  = -Wall -Wextra -Werror
+CFLAGS  = -Wall -Wextra
 RM      = rm -f
 
-CFILES  = main.c
+CFILES  = main.c parser.c
 OFILES  = $(CFILES:.c=.o)
 
 all: $(NAME)
