@@ -54,3 +54,7 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# learning
+threads-training
+en.subject.pdf
